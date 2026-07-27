@@ -2,5 +2,7 @@ pypdf
 langchain
 langchain-cohere
 langchain-community
+langchain-text-splitters
+langchain-classic
 python-dotenv
 faiss-cpu
