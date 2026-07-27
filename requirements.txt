@@ -6,3 +6,4 @@ langchain-text-splitters
 langchain-classic
 python-dotenv
 faiss-cpu
+streamlit
