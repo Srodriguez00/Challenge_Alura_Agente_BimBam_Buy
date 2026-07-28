@@ -45,6 +45,12 @@ El agente responde preguntas basadas en 5 documentos de **BimBam Buy** (e-commer
 
 ## ⚙️ Instalación y ejecución
 
+### Requisitos previos
+- Python 3.11 o superior
+- Una API key de [Cohere](https://cohere.com) (gratuita)
+
+### Pasos
+
 ```bash
 # Clonar el repositorio
 git clone git@github.com:Srodriguez00/Challenge_Alura_Agente_BimBam_Buy.git
@@ -53,17 +59,30 @@ cd Challenge_Alura_Agente_BimBam_Buy
 # Crear entorno virtual
 python -m venv venv
 venv\Scripts\activate      # Windows
+# source venv/bin/activate   # Linux/Mac
 
 # Instalar dependencias
 pip install -r requirements.txt
 
-# Crear archivo .env con tu API key de Cohere
+# Crear archivo .env en la raíz del proyecto con tu API key de Cohere
 # COHERE_API_KEY=tu_clave_aqui
+```
 
-# Ejecutar el agente
+### Opción 1: Interfaz web (recomendada)
+
+```bash
+streamlit run src/app.py
+```
+
+Abre automáticamente en tu navegador en `http://localhost:8501`.
+
+### Opción 2: Modo consola
+
+```bash
 python src/agente.py
 ```
 
+Permite hacer preguntas directamente desde la terminal.
 ## 💬 Ejemplos de uso
 
 **Pregunta:** ¿Cuántos días tiene el cliente para solicitar un retracto de compra?
