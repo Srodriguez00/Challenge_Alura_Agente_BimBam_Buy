@@ -88,7 +88,16 @@ python src/agente.py
 
 ## ☁️ Deploy
 
-<!-- TODO: agregar aquí el enlace público o la captura de pantalla del deploy en OCI -->
+El agente está desplegado en una instancia de cómputo de **Oracle Cloud Infrastructure (OCI)** 
+(Ubuntu 20.04, shape VM.Standard.E2.1.Micro, Always Free Tier), con una interfaz web 
+construida en **Streamlit**, accesible públicamente en:
+
+🔗 **http://129.158.213.9:8501**
+
+> Nota: la IP es efímera y puede cambiar si la instancia se reinicia. Si el enlace no 
+> está disponible, ver la captura de pantalla a continuación como evidencia del deploy funcional.
+
+![Agente funcionando en producción](docs/captura_deploy.png)
 
 ## 👤 Autor
 
